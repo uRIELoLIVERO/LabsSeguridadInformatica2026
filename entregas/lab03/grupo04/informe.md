@@ -1,7 +1,7 @@
 # Informe — Laboratorio 03 · Autenticación
 
 **Grupo:** Grupo 04  
-**Integrantes:** *(A completar por los integrantes del grupo)*
+**Integrantes:**
 - Integrante 1 — `@uRIELoLIVERO`
 - Integrante 2 — `@JereAntunez`
 - Integrante 3 — `@FacundoAnil4`
