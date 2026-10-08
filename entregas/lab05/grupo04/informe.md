@@ -6,7 +6,6 @@
 - Jeremias Antunez — @JereAntunez
 - Facundo Anil — @FacundoAnil4
 - Matias Lelli — @LelliMatias
-t
 ---
 
 ## 0. Declaración de uso de IA
