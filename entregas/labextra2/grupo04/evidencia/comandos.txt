@@ -1,0 +1,57 @@
+./ctf lab extra2
+mkdir -p entregas/labextra2/grupo04/evidencia
+history | sed 's/^ *[0-9]* *//' > entregas/labextra2/grupo04/evidencia/comandos.txt
+cat entregas/labextra2/grupo04/evidencia/comandos.txt
+cd "/c/Users/olive/Desktop/Dev/seguridadUTN/LabsSeguridadInformatica2026/labs/labextra2-git-forense/caso/repo-delata"
+git log --oneline --all
+clear
+cd "/c/Users/olive/Desktop/Dev/seguridadUTN/LabsSeguridadInformatica2026/labs/labextra2-git-forense/caso/repo-delata"
+git log --oneline --all
+git log -p --all
+git --no-pager log -p --all > "/c/Users/olive/Desktop/Dev/seguridadUTN/LabsSeguridadInformatica2026/entregas/labextra2/grupo04/evidencia/salidas/r1.txt"
+mkdir -p "/c/Users/olive/Desktop/Dev/seguridadUTN/LabsSeguridadInformatica2026/entregas/labextra2/grupo04/evidencia/salidas"
+git log -p --all > "/c/Users/olive/Desktop/Dev/seguridadUTN/LabsSeguridadInformatica2026/entregas/labextra2/grupo04/evidencia/salidas/r1.txt"
+git log -p --all
+git --no-pager log -p --all > "/c/Users/olive/Desktop/Dev/seguridadUTN/LabsSeguridadInformatica2026/entregas/labextra2/grupo04/evidencia/salidas/r1.txt"
+git --no-pager log -p --all > "/c/Users/olive/Desktop/Dev/seguridadUTN/LabsSeguridadInformatica2026/entregas/labextra2/grupo04/evidencia/salidas/r1.txt"
+head -5 "/c/Users/olive/Desktop/Dev/seguridadUTN/LabsSeguridadInformatica2026/entregas/labextra2/grupo04/evidencia/salidas/r1.txt"
+grep -n "^commit" "/c/Users/olive/Desktop/Dev/seguridadUTN/LabsSeguridadInformatica2026/entregas/labextra2/grupo04/evidencia/salidas/r1.txt"
+sed -n 'INICIO,FINp' "/c/Users/olive/Desktop/Dev/seguridadUTN/LabsSeguridadInformatica2026/entregas/labextra2/grupo04/evidencia/salidas/r1.txt"
+sed -n '20,37p' "/c/Users/olive/Desktop/Dev/seguridadUTN/LabsSeguridadInformatica2026/entregas/labextra2/grupo04/evidencia/salidas/r1.txt"
+cd "/c/Users/olive/Desktop/Dev/seguridadUTN/LabsSeguridadInformatica2026"
+./ctf submit extra2 R1 'FLAG{git_log_no_olvida}'
+./ctf status extra2
+sed -n '38,54p' "/c/Users/olive/Desktop/Dev/seguridadUTN/LabsSeguridadInformatica2026/entregas/labextra2/grupo04/evidencia/salidas/r1.txt"
+git log --all --date=short --format='%h | %an | %ad | %s'
+cd "/c/Users/olive/Desktop/Dev/seguridadUTN/LabsSeguridadInformatica2026/labs/labextra2-git-forense/caso/repo-delata"
+git --no-pager log --all --date=short --format='%h | %an | %ad | %s'
+sed -n '55,90p' "/c/Users/olive/Desktop/Dev/seguridadUTN/LabsSeguridadInformatica2026/entregas/labextra2/grupo04/evidencia/salidas/r1.txt"
+sed -n '91,$p' "/c/Users/olive/Desktop/Dev/seguridadUTN/LabsSeguridadInformatica2026/entregas/labextra2/grupo04/evidencia/salidas/r1.txt"
+cd "/c/Users/olive/Desktop/Dev/seguridadUTN/LabsSeguridadInformatica2026"
+./ctf submit extra2 R3 'FLAG{git_rama_abandonada}'
+./ctf status extra2
+cd "/c/Users/olive/Desktop/Dev/seguridadUTN/LabsSeguridadInformatica2026/labs/labextra2-git-forense/caso/repo-delata"
+git --no-pager reflog
+git --no-pager show bc9d0db
+git --no-pager reflog > "/c/Users/olive/Desktop/Dev/seguridadUTN/LabsSeguridadInformatica2026/entregas/labextra2/grupo04/evidencia/salidas/r2-reflog.txt"
+git --no-pager show bc9d0db
+cd "/c/Users/olive/Desktop/Dev/seguridadUTN/LabsSeguridadInformatica2026"
+./ctf submit extra2 R2 'FLAG{git_reflog_rescata}'
+./ctf status extra2
+git --no-pager branch -a > "/c/Users/olive/Desktop/Dev/seguridadUTN/LabsSeguridadInformatica2026/entregas/labextra2/grupo04/evidencia/salidas/r3-ramas.txt"
+git --no-pager show 0abdf95 > "/c/Users/olive/Desktop/Dev/seguridadUTN/LabsSeguridadInformatica2026/entregas/labextra2/grupo04/evidencia/salidas/r3.txt"
+git --no-pager show 0abdf95 > "/c/Users/olive/Desktop/Dev/seguridadUTN/LabsSeguridadInformatica2026/entregas/labextra2/grupo04/evidencia/salidas/r3.txt"
+ls "/c/Users/olive/Desktop/Dev/seguridadUTN/LabsSeguridadInformatica2026/entregas/labextra2/grupo04/evidencia/salidas/"
+cd "/c/Users/olive/Desktop/Dev/seguridadUTN/LabsSeguridadInformatica2026/labs/labextra2-git-forense/caso/repo-delata"
+git --no-pager branch -a > "/c/Users/olive/Desktop/Dev/seguridadUTN/LabsSeguridadInformatica2026/entregas/labextra2/grupo04/evidencia/salidas/r3-ramas.txt"
+git --no-pager show 0abdf95 > "/c/Users/olive/Desktop/Dev/seguridadUTN/LabsSeguridadInformatica2026/entregas/labextra2/grupo04/evidencia/salidas/r3.txt"
+head -5 "/c/Users/olive/Desktop/Dev/seguridadUTN/LabsSeguridadInformatica2026/entregas/labextra2/grupo04/evidencia/salidas/r3-ramas.txt"
+head -5 "/c/Users/olive/Desktop/Dev/seguridadUTN/LabsSeguridadInformatica2026/entregas/labextra2/grupo04/evidencia/salidas/r3.txt"
+./ctf status extra2
+cd ../
+./ctf status extra2
+cd ../
+./ctf status extra2
+cd "/c/Users/olive/Desktop/Dev/seguridadUTN/LabsSeguridadInformatica2026"
+./ctf status extra2
+history | sed 's/^ *[0-9]* *//' > "/c/Users/olive/Desktop/Dev/seguridadUTN/LabsSeguridadInformatica2026/entregas/labextra2/grupo04/evidencia/comandos-caso.txt"
